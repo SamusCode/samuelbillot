@@ -1,0 +1,28 @@
+@import "./colors.scss";
+
+@font-face {
+    font-family: Tungsten-Bold;
+    src: url("/fonts/Tungsten-Bold.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-SemiBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: Montserrat;
+}
+
+h1 {
+    font-family: Tungsten-Bold;
+    font-size: 200px;
+}

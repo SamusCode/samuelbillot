@@ -1,0 +1,83 @@
+@import "../../colors.scss";
+
+header {
+    background-color: transparent;
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+
+            li {
+                a {
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+
+                a.projects {
+                    background-color: $blue;
+                    font-size: 60px;
+                    color: $white;
+                    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+                    font-family: Tungsten-Bold;
+                    padding: 0 60px;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: $light-blue;
+                    }
+                }
+
+                a.home, a.contact {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+
+                    div.link-decoration {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            transform: rotate(45deg);
+                            width: 12px;
+                            height: 12px;
+                        }
+        
+                        span.square {
+                            background-color: transparent;
+                            border: 1px solid $black;
+                        }
+        
+                        span.left-chevron {
+                            border-left: 1px solid $black;
+                            border-bottom: 1px solid $black;
+                            margin-right: -6px;
+                        }
+        
+                        span.right-chevron {
+                            border-top: 1px solid $black;
+                            border-right: 1px solid $black;
+                            margin-left: -6px;
+                        }
+                    }
+                }
+
+                a.focus {
+                    color: $light-blue;
+
+                    span {
+                        border-color: $light-blue !important;
+                    }
+
+                    span.square {
+                        background-color: $light-blue !important;
+                    }
+                }
+            }
+        }
+    }
+}
