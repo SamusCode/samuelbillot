@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: $white;
+    background-color: $background-color;
     color: $black;
     font-family: Montserrat;
 }
@@ -25,4 +25,5 @@ body {
 h1 {
     font-family: Tungsten-Bold;
     font-size: 200px;
+    color: $white;
 }

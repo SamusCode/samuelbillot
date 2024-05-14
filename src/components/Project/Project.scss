@@ -1,0 +1,47 @@
+@import "../../colors.scss";
+
+div.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+    background-color: $card-background;
+    border: 1px solid $card-border;
+    color: $white;
+
+    div {
+        height: 70%;
+        max-width: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        img {
+            height: 120px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        background-color: $light-blue;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.2s;
+    }
+
+    &:hover::after {
+        width: 60%;
+    }
+}

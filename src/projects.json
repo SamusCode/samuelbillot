@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "title": "Conway's Game",
+            "description": "Game that simulates cells behaviour",
+            "image": "game-of-life.png",
+            "link": "https://solarrris.github.io/game-of-life/"
+        },
+        {
+            "title": "Valorant Search API",
+            "description": "Usage of a Valorant API to get information on various game elements",
+            "image": "valorant-api.jpg",
+            "link": "https://solarrris.github.io/r4a10-tp-api-2023-billots-boudiafj/"
+        },
+        {
+            "title": "JavaScript Fighting Game",
+            "description": "Quick and not finished fighting game with handmade assets",
+            "image": "fighting-game.png",
+            "link": "https://solarrris.github.io/fighting-game/"
+        },
+        {
+            "title": "Company Presentation",
+            "description": "Website presentation of Inetum - School Project",
+            "image": "inetum.jpg",
+            "link": "https://gabrielhalus.com/sae-inetum"
+        },
+        {
+            "title": "E-Commerce Project",
+            "description": "Unfinished project about e-commerce",
+            "image": "fashioner.png",
+            "link": "https://solarrris.github.io/Website-fashioner/"
+        }
+    ]
+}

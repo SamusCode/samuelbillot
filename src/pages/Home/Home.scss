@@ -1,0 +1,30 @@
+div.home {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 72px);
+
+    div.left {
+        div.title {
+            line-height: 1.0;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+
+        ul.socials {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+
+            li {
+                a {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
