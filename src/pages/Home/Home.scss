@@ -1,29 +1,48 @@
+@import "../../colors.scss";
+
 div.home {
     position: relative;
     display: flex;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 77px);
 
     div.left {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+
         div.title {
             line-height: 1.0;
-            position: absolute;
-            top: 20%;
-            left: 10%;
         }
 
         ul.socials {
             list-style: none;
             display: flex;
-            gap: 12px;
+            gap: 16px;
 
             li {
                 a {
                     img {
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
+            }
+        }
+
+        a.resume {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 0.4em 1em;
+            background-color: $light-blue;
+            border-radius: 12px;
+            transition: 0.3s;
+            border: 2px solid $background-color;
+            font-size: 18px;
+
+            &:hover {
+                background-color: $background-color;
+                border-color: $light-blue;
+                color: $white;
             }
         }
     }
