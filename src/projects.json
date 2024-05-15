@@ -7,6 +7,12 @@
             "link": "https://solarrris.github.io/game-of-life/"
         },
         {
+            "title": "Coding Game Jam",
+            "description": "Game Jam organized between the french \"IUTs\". Second place",
+            "image": "rescue.png",
+            "link": "https://jaufret.itch.io/rescue-a-sisters-journey"
+        },
+        {
             "title": "Valorant Search API",
             "description": "Usage of a Valorant API to get information on various game elements",
             "image": "valorant-api.jpg",
