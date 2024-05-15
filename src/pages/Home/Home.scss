@@ -5,44 +5,70 @@ div.home {
     display: flex;
     height: calc(100vh - 77px);
 
-    div.left {
+    div.container {
         position: absolute;
         top: 20%;
         left: 10%;
+        width: 75vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        div.title {
-            line-height: 1.0;
-        }
-
-        ul.socials {
-            list-style: none;
-            display: flex;
-            gap: 16px;
-
-            li {
-                a {
-                    img {
-                        width: 40px;
-                        height: 40px;
+        div.left {
+            div.title {
+                line-height: 1.0;
+            }
+    
+            ul.socials {
+                list-style: none;
+                display: flex;
+                gap: 16px;
+    
+                li {
+                    a {
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
+                }
+            }
+    
+            a.resume {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 0.4em 1em;
+                background-color: $light-blue;
+                border-radius: 12px;
+                transition: 0.3s;
+                border: 2px solid $background-color;
+                font-size: 18px;
+    
+                &:hover {
+                    background-color: $background-color;
+                    border-color: $light-blue;
+                    color: $white;
                 }
             }
         }
 
-        a.resume {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 0.4em 1em;
-            background-color: $light-blue;
-            border-radius: 12px;
-            transition: 0.3s;
-            border: 2px solid $background-color;
-            font-size: 18px;
+        div.right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+            width: 40%;
 
-            &:hover {
-                background-color: $background-color;
-                border-color: $light-blue;
+            img {
+                width: 50%;
+                border-radius: 50%;
+                border: 5px solid $white;
+            }
+
+            p {
+                font-size: 23px;
                 color: $white;
+                text-align: center;
             }
         }
     }

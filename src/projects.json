@@ -1,40 +1,55 @@
 {
-    "projects": [
+    "personalProjects": [
         {
             "title": "Conway's Game",
             "description": "Game that simulates cells behaviour",
             "image": "game-of-life.png",
-            "link": "https://solarrris.github.io/game-of-life/"
-        },
-        {
-            "title": "Coding Game Jam",
-            "description": "Game Jam organized between the french \"IUTs\". Second place",
-            "image": "rescue.png",
-            "link": "https://jaufret.itch.io/rescue-a-sisters-journey"
-        },
-        {
-            "title": "Valorant Search API",
-            "description": "Usage of a Valorant API to get information on various game elements",
-            "image": "valorant-api.jpg",
-            "link": "https://solarrris.github.io/r4a10-tp-api-2023-billots-boudiafj/"
+            "link": "https://solarrris.github.io/game-of-life/",
+            "languages": "Canvas, JavaScript"
         },
         {
             "title": "JavaScript Fighting Game",
             "description": "Quick and not finished fighting game with handmade assets",
             "image": "fighting-game.png",
-            "link": "https://solarrris.github.io/fighting-game/"
-        },
-        {
-            "title": "Company Presentation",
-            "description": "Website presentation of Inetum - School Project",
-            "image": "inetum.jpg",
-            "link": "https://gabrielhalus.com/sae-inetum"
+            "link": "https://solarrris.github.io/fighting-game/",
+            "languages": "Canvas, JavaScript"
         },
         {
             "title": "E-Commerce Project",
             "description": "Unfinished project about e-commerce",
             "image": "fashioner.png",
-            "link": "https://solarrris.github.io/Website-fashioner/"
+            "link": "https://solarrris.github.io/Website-fashioner/",
+            "languages": "HTML, CSS, JavaScript"
+        }
+    ],
+    "schoolProjects": [
+        {
+            "title": "Company Presentation",
+            "description": "Website presentation of Inetum - School Project",
+            "image": "inetum.jpg",
+            "link": "https://gabrielhalus.com/sae-inetum",
+            "languages": "HTML, CSS, JavaScript"
+        },
+        {
+            "title": "Valorant Search API",
+            "description": "Usage of a Valorant API to get information on various game elements - School Project",
+            "image": "valorant-api.jpg",
+            "link": "https://solarrris.github.io/r4a10-tp-api-2023-billots-boudiafj/",
+            "languages": "HTML, CSS, JavaScript"
+        },
+        {
+            "title": "Coding Game Jam",
+            "description": "Game Jam organized between the french \"IUTs\". Second place",
+            "image": "rescue.png",
+            "link": "https://jaufret.itch.io/rescue-a-sisters-journey",
+            "languages": "Godot"
+        },
+        {
+            "title": "School Game Jam",
+            "description": "Game Jam organized within the university. Fifth place",
+            "image": "porto.png",
+            "link": "https://github.com/leo-jcq/game-jam",
+            "languages": "Pygame, Python"
         }
     ]
 }

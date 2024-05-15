@@ -1,8 +1,34 @@
 @import "../../colors.scss";
 
 div.projects {
-    div.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.title {
+        display: flex;
+        align-items: center;
         margin-top: 40px;
+
+        span {
+            transform: rotate(45deg);
+            width: 12px;
+            height: 12px;
+        }
+
+        span.square {
+            background-color: $white;
+        }
+
+        h2 {
+            margin: 0 16px;
+            color: $white;
+        }
+    }
+
+    div.grid {
+        width: 100%;
+        margin: 20px 0;
         padding: 0 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

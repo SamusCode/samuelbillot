@@ -27,6 +27,10 @@ div.project {
         p {
             text-align: center;
         }
+
+        p.languages {
+            font-weight: 800;
+        }
     }
 
     &::after {

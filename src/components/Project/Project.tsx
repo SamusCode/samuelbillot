@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { imagesPath } from "../../../config.json";
 import "./Project.scss";
 
 interface CardProps {
@@ -6,6 +7,7 @@ interface CardProps {
     description: string;
     image: string;
     link: string;
+    languages: string;
 }
 
 export default function Projects(props: CardProps) {
@@ -17,9 +19,10 @@ export default function Projects(props: CardProps) {
     return (
         <div onClick={() => handleCardClick(props.link)} key={props.title} className="project">
             <div>
-                <img src={"src/images/projects/" + props.image} alt={props.title + " image"} />
+                <img src={imagesPath + "projects/" + props.image} alt={props.title + " image"} />
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
+                <p className="languages">{props.languages}</p>
             </div>
         </div>
     )

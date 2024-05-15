@@ -36,3 +36,21 @@ a {
     color: $black;
     text-decoration: none;
 }
+
+span.square {
+    background-color: transparent;
+    border: 1px solid $white;
+    transition: 0.2s;
+}
+
+span.left-chevron {
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
+    margin-right: -6px;
+}
+
+span.right-chevron {
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+    margin-left: -6px;
+}
