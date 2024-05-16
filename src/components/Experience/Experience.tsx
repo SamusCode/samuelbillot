@@ -12,9 +12,9 @@ export default function Projects(props: ExperienceProp) {
         <div key={props.title} className="experience">
             <div>
                 <h2>{props.title}</h2>
-                <p>{props.description}</p>
                 <p>{props.year}</p>
                 <p>{props.duration}</p>
+                <p>{props.description}</p>
             </div>
         </div>
     )

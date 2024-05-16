@@ -16,10 +16,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: $background-color;
+    background-color: $background;
     color: $black;
     font-family: Montserrat;
+    overflow-x: hidden;
 }
 
 h1 {

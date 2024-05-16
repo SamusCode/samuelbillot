@@ -37,7 +37,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className="projects">
+        <div id="projects">
             <div className="title">
                 <span className='left-chevron'></span>
                 <span className='square'></span>

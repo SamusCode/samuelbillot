@@ -1,75 +1,182 @@
 @import "../../colors.scss";
 
-div.home {
+div#home {
     position: relative;
     display: flex;
-    height: calc(100vh - 77px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient($top-background, $background);
 
-    div.container {
+    div.line-1,
+    div.line-2 {
+        position: relative;
+        left: -5vw;
+        width: 110vw;
+    }
+
+    svg {
         position: absolute;
-        top: 20%;
-        left: 10%;
-        width: 75vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+    }
 
-        div.left {
-            div.title {
-                line-height: 1.0;
-            }
-    
-            ul.socials {
-                list-style: none;
-                display: flex;
-                gap: 16px;
-    
-                li {
-                    a {
-                        img {
-                            width: 40px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-    
-            a.resume {
-                display: inline-block;
-                margin-top: 20px;
-                padding: 0.4em 1em;
-                background-color: $light-blue;
-                border-radius: 12px;
-                transition: 0.3s;
-                border: 2px solid $background-color;
-                font-size: 18px;
-    
-                &:hover {
-                    background-color: $background-color;
-                    border-color: $light-blue;
-                    color: $white;
-                }
-            }
+    div>svg {
+        animation: 7s power-on;
+    }
+
+    svg.glow {
+        transform: translateY(-16px);
+    }
+
+    div svg.glow {
+        animation: 7s glow-power-on;
+    }
+
+    div.title {
+        text-align: center;
+        z-index: 1;
+
+        h2 {
+            color: $orange;
+            width: 100%;
+            letter-spacing: 0.8em;
+            font-size: 35px;
+        }
+    }
+
+    a {
+        position: absolute;
+        left: 50%;
+        bottom: 6em;
+        transform: translateX(-50%);
+        background-color: transparent;
+        border: 2px solid $orange;
+        border-radius: 8px;
+        font-size: 23px;
+        color: $white;
+        padding: 0.25em 0.75em;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 0px 15px 1px $orange;
+        }
+    }
+
+    @keyframes power-on {
+        from {
+            opacity: 0.6;
         }
 
-        div.right {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 3em;
-            width: 40%;
+        48% {
+            opacity: 0.6;
+        }
 
-            img {
-                width: 50%;
-                border-radius: 50%;
-                border: 5px solid $white;
-            }
+        50% {
+            opacity: 1;
+        }
 
-            p {
-                font-size: 23px;
-                color: $white;
-                text-align: center;
-            }
+        52% {
+            opacity: 0.6;
+        }
+
+        68% {
+            opacity: 0.6;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        72% {
+            opacity: 0.6;
+        }
+
+        80% {
+            opacity: 0.6;
+        }
+
+        82% {
+            opacity: 1;
+        }
+
+        84% {
+            opacity: 0.6;
+        }
+
+        86% {
+            opacity: 1;
+        }
+
+        88% {
+            opacity: 0.6;
+        }
+
+        98% {
+            opacity: 0.6;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes glow-power-on {
+        from {
+            opacity: 0;
+        }
+
+        48% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        52% {
+            opacity: 0;
+        }
+
+        68% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        72% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        82% {
+            opacity: 1;
+        }
+
+        84% {
+            opacity: 0;
+        }
+
+        86% {
+            opacity: 1;
+        }
+
+        88% {
+            opacity: 0;
+        }
+
+        98% {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
         }
     }
 }

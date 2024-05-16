@@ -1,19 +1,25 @@
 {
     "carreer": [
         {
-            "title": "Test",
+            "title": "School work program - MVP",
+            "description": "We had to recreate an application developed in C# using Web technologies. My job was to set up an internal communications module. In-depth knowledge of : PHP (WebServices), JavaSript, HTML, CSS",
+            "year": "2023 - 2024",
+            "duration": "6 months"
+        },
+        {
+            "title": "Internship - Linkso",
             "description": "blabla",
-            "year": "2018 - 2021",
+            "year": "2023",
+            "duration": "4 months"
+        },
+        {
+            "title": "School - IUT2 Grenoble",
+            "description": "blabla",
+            "year": "2021 - 2024",
             "duration": "3 years"
         },
         {
-            "title": "Testfdsf",
-            "description": "blabla",
-            "year": "2018 - 2021",
-            "duration": "3 years"
-        },
-        {
-            "title": "TestDSGDS",
+            "title": "School - Pablo Neruda High School",
             "description": "blabla",
             "year": "2018 - 2021",
             "duration": "3 years"

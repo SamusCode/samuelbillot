@@ -2,6 +2,14 @@
 
 header {
     background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 40px;
+    width: 100%;
 
     nav {
         display: flex;
@@ -18,54 +26,21 @@ header {
             li {
                 a {
                     display: inline-block;
-                    color: $black;
+                    color: $white;
                     text-decoration: none;
-                    font-size: 20px;
+                    font-size: 22px;
                     height: 100%;
                 }
+            }
+        }
 
-                a.projects {
-                    background-color: $orange;
-                    font-size: 57px;
-                    color: $white;
-                    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
-                    font-family: Tungsten-Bold;
-                    padding: 4px 70px;
-                    transition: 0.2s;
+        ul.socials {
+            gap: 24px;
 
-                    &:hover {
-                        background-color: $light-orange;
-                    }
-                }
-
-                a.home,
-                a.contact {
-                    display: flex;
-                    gap: 12px;
-                    align-items: center;
-                    color: $white;
-
-                    div.link-decoration {
-                        display: flex;
-                        align-items: center;
-
-                        span {
-                            transform: rotate(45deg);
-                            width: 12px;
-                            height: 12px;
-                        }
-                    }
-
-                    &:hover {
-                        span.square {
-                            background-color: $light-orange !important;
-                        }
-                    }
-                }
-
-                a.focus {
-                    span.square {
-                        background-color: $orange !important;
+            li {
+                a {
+                    img {
+                        width: 36px;
                     }
                 }
             }

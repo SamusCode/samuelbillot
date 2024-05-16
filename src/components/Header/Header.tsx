@@ -1,35 +1,19 @@
-import { useEffect, useState } from 'react';
+import { imagesPath } from "../../../config.json";
 import './Header.scss';
-import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
-    const [homeFocusClassName, setHomeFocusClassName] = useState("");
-    const [contactFocusClassName, setContactFocusClassName] = useState("");
-
-    const location = useLocation();
-
-    useEffect(() => {
-        const locaitonList = location.pathname.split("/");
-
-        const currentTarget = locaitonList[locaitonList.length - 1];
-
-        setContactFocusClassName("");
-        setHomeFocusClassName("");
-
-        if (currentTarget == "contact") {
-            setContactFocusClassName("focus");
-        } else if (currentTarget == "") {
-            setHomeFocusClassName("focus");
-        }
-    }, [location])
-
     return (
         <header>
             <nav>
                 <ul>
-                    <li><Link to="/" className={"home " + homeFocusClassName}><div className='link-decoration'><span className='left-chevron'></span><span className='square'></span></div>Home</Link></li>
-                    <li><Link to="/projects" className='projects'>PROJECTS</Link></li>
-                    <li><Link to="/contact" className={"contact " + contactFocusClassName}>Contact<div className='link-decoration'><span className='square'></span><span className='right-chevron'></span></div></Link></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul className="socials">
+                    <li><a href="https://www.linkedin.com/in/samuel-billot-40355b251/" target="_blank" title="LinkedIn"><img src={"samuelbillot/" + imagesPath + "icons/linkedin.svg"} alt="Linkedin" /></a></li>
+                    <li><a href="https://github.com/Solarrris" target="_blank" title="GitHub"><img src={"samuelbillot/" + imagesPath + "icons/github.svg"} alt="Github" /></a></li>
                 </ul>
             </nav>
         </header>
