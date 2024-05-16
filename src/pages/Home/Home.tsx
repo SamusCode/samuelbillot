@@ -36,7 +36,6 @@ export default function Home() {
                         </filter>
                     </defs>
                 </svg>
-
             </div>
             <div className="title">
                 <h1>SAMUEL BILLOT</h1>

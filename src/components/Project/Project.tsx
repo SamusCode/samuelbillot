@@ -19,7 +19,7 @@ export default function Projects(props: CardProps) {
     return (
         <div onClick={() => handleCardClick(props.link)} key={props.title} className="project">
             <div>
-                <img src={"samuelbillot/" + imagesPath + "projects/" + props.image} alt={props.title + " image"} />
+                <img src={imagesPath + "projects/" + props.image} alt={props.title + " image"} />
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
                 <p className="languages">{props.languages}</p>
