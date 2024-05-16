@@ -11,6 +11,11 @@ div.project {
     background-color: $card-background;
     border: 1px solid $card-border;
     color: $white;
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: 0px 0px 15px 1px $light-blue;
+    }
 
     div {
         height: 70%;
@@ -31,21 +36,5 @@ div.project {
         p.languages {
             font-weight: 800;
         }
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        width: 0px;
-        height: 2px;
-        background-color: $light-blue;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: 0.2s;
-    }
-
-    &:hover::after {
-        width: 60%;
     }
 }
