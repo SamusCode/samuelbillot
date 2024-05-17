@@ -14,7 +14,7 @@ export default function Projects() {
         for (let i = 0; i < personalProjects.length; i++) {
             const project = personalProjects[i];
 
-            const div = <Project title={project.title} description={project.description} image={project.image} link={project.link} languages={project.languages} />
+            const div = <Project key={project.title} title={project.title} description={project.description} image={project.image} link={project.link} languages={project.languages} />
 
             personalProjectsList.push(div);
         }
@@ -24,7 +24,7 @@ export default function Projects() {
         for (let i = 0; i < schoolProjects.length; i++) {
             const project = schoolProjects[i];
 
-            const div = <Project title={project.title} description={project.description} image={project.image} link={project.link} languages={project.languages} />
+            const div = <Project key={project.title} title={project.title} description={project.description} image={project.image} link={project.link} languages={project.languages} />
 
             schoolProjectsList.push(div);
         }
