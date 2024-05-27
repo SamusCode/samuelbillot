@@ -37,3 +37,19 @@ div#projects {
         gap: 20px 40px;
     }
 }
+
+@media screen and (max-width: 1500px) {
+    div#projects {
+        div.grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div#projects {
+        div.grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -32,7 +32,7 @@ header {
                 display: flex;
                 align-items: center;
 
-                a {
+                a:not(.resume) {
                     display: flex;
                     align-items: center;
                     color: $white;
@@ -86,6 +86,35 @@ header {
                     box-shadow: 0px 0px 15px 1px $orange;
                 }
             }
+        }
+    }
+
+    button.burger-menu {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+        display: none;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        svg {
+            color: white;
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        button.burger-menu {
+            display: block;
+        }
+
+        nav {
+            display: none;
         }
     }
 }
