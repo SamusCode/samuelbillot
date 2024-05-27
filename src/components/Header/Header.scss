@@ -33,6 +33,12 @@ header {
                     color: $white;
                     text-decoration: none;
                     font-size: 22px;
+
+                    transition: 0.15s;
+
+                    &:hover {
+                        text-shadow: $white 1px 0 5px;
+                    }
                 }
             }
         }
@@ -45,6 +51,15 @@ header {
                     svg {
                         width: 36px;
                         height: 36px;
+                        transition: 0.15s;
+
+                        &:hover {
+                            box-shadow: 0px 0px 15px 1px $white;
+                        }
+                    }
+
+                    svg.github {
+                        border-radius: 50%;
                     }
                 }
             }
@@ -54,7 +69,7 @@ header {
                 padding: 0.4em 1em;
                 background-color: $orange;
                 border-radius: 12px;
-                transition: 0.3s;
+                transition: 0.2s ease-in;
                 border: 2px solid $top-background;
                 color: $black;
                 font-size: 18px;
