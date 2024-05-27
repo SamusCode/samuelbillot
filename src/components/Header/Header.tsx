@@ -1,9 +1,27 @@
+import { useCallback, useEffect, useState } from "react";
 import { publicPath } from "../../../config.json";
 import './Header.scss';
 
 export default function Header() {
+    const [scrollClass, setScrollClass] = useState("");
+
+    const handleScroll = useCallback(() => {
+        if (window.scrollY > 0) {
+            setScrollClass("scroll")
+        } else {
+            setScrollClass("");
+        }
+    }, [])
+
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
+
     return (
-        <header>
+        <header className={scrollClass}>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
