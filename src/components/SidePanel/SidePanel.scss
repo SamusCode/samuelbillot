@@ -1,0 +1,40 @@
+@import '../../colors.scss';
+
+div.side-panel {
+    display: none;
+    transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 1000px) {
+    div.side-panel {
+        display: block;
+        height: 100vh;
+        width: 30vw;
+        min-width: 200px;
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        transform: translateX(100%);
+
+        button.close-panel {
+            position: absolute;
+            cursor: pointer;
+            top: 1.5em;
+            right: 2em;
+            background-color: transparent;
+            border: 0;
+
+
+            svg {
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+        &.visible {
+            transform: translateX(0);
+        }
+    }
+}

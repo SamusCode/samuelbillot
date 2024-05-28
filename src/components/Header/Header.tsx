@@ -2,7 +2,11 @@ import { useCallback, useEffect, useState } from "react";
 import { publicPath } from "../../../config.json";
 import './Header.scss';
 
-export default function Header() {
+interface HeaderProps {
+    handleBurgerClick: Function
+}
+
+export default function Header(props: HeaderProps) {
     const [scrollClass, setScrollClass] = useState("");
 
     const handleScroll = useCallback(() => {
@@ -12,7 +16,6 @@ export default function Header() {
             setScrollClass("");
         }
     }, [])
-
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -41,10 +44,10 @@ export default function Header() {
                     </svg></a></li>
                 </ul>
             </nav>
-            <button className="burger-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
+            <button className="burger-menu" onClick={() => props.handleBurgerClick()}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
             </button>
         </header>
     )
