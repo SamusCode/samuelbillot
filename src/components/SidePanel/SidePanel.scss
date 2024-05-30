@@ -2,12 +2,90 @@
 
 div.side-panel {
     display: none;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-out transform;
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            gap: 8px;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a:not(.resume) {
+                    display: flex;
+                    align-items: center;
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 28px;
+
+                    transition: 0.15s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        ul.socials {
+            gap: 2.5em;
+            flex-direction: row;
+            position: absolute;
+            bottom: 2em;
+
+            li {
+                a {
+                    svg {
+                        width: 48px;
+                        height: 48px;
+                        transition: 0.15s;
+                        fill: $black;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    svg.github {
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            a.resume {
+                display: inline-block;
+                padding: 0.4em 1em;
+                background-color: $orange;
+                border-radius: 12px;
+                transition: 0.2s ease-in;
+                border: 2px solid $top-background;
+                color: $black;
+                font-size: 18px;
+
+                &:hover {
+                    background-color: $top-background;
+                    border-color: $orange;
+                    color: $white;
+                    box-shadow: 0px 0px 15px 1px $orange;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
     div.side-panel {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
         width: 30vw;
         min-width: 200px;

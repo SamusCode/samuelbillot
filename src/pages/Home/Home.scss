@@ -12,8 +12,8 @@ div#home {
     div.lines {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        left: -3vw;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
         width: 110vw;
 
         svg {
@@ -193,6 +193,21 @@ div#home {
 
 @media screen and (max-width: 1000px) {
     div#home {
+        div.lines {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: max(110vw, 750px);
+    
+            svg {
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                transform: translateY(-50%);
+                width: 100%;
+            }
+        }
+        
         div.content {
             position: relative;
 
@@ -200,16 +215,22 @@ div#home {
                 display: block;
             }
 
+            h1 {
+                font-size: max(16vw, 95px);
+            }
+
             h1.main-title {
                 display: none;
             }
 
             h2 {
-                width: 60vw;
+                width: 100vw;
                 position: absolute;
                 bottom: -2.5em;
                 left: 50%;
+                letter-spacing: 0.5em;
                 transform: translateX(-50%);
+                font-size: max(2.8vw, 18px);
             }
         }
     }
