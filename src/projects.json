@@ -2,9 +2,16 @@
     "personalProjects": [
         {
             "title": "Conway's Game",
-            "description": "Game that simulates cells behaviour",
+            "description": "Game that simulates life cells behaviour",
             "image": "game-of-life.png",
             "link": "https://solarrris.github.io/game-of-life/",
+            "languages": "Canvas, JavaScript"
+        },
+        {
+            "title": "Falling Sand",
+            "description": "Game that simulates sand falling",
+            "image": "falling-sand.png",
+            "link": "https://solarrris.github.io/falling-sand/",
             "languages": "Canvas, JavaScript"
         },
         {
