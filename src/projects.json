@@ -4,28 +4,28 @@
             "title": "Conway's Game",
             "description": "Game that simulates life cells behaviour",
             "image": "game-of-life.png",
-            "link": "https://solarrris.github.io/game-of-life/",
+            "link": "https://samuscode.github.io/game-of-life/",
             "languages": "Canvas, JavaScript"
         },
         {
             "title": "Falling Sand",
             "description": "Game that simulates sand falling",
             "image": "falling-sand.png",
-            "link": "https://solarrris.github.io/falling-sand/",
+            "link": "https://samuscode.github.io/falling-sand/",
             "languages": "Canvas, JavaScript"
         },
         {
             "title": "JavaScript Fighting Game",
             "description": "Quick and not finished fighting game with handmade assets",
             "image": "fighting-game.png",
-            "link": "https://solarrris.github.io/fighting-game/",
+            "link": "https://samuscode.github.io/fighting-game/",
             "languages": "Canvas, JavaScript"
         },
         {
             "title": "E-Commerce Project",
             "description": "Unfinished project about e-commerce",
             "image": "fashioner.png",
-            "link": "https://solarrris.github.io/Website-fashioner/",
+            "link": "https://samuscode.github.io/Website-fashioner/",
             "languages": "HTML, CSS, JavaScript"
         }
     ],
@@ -41,7 +41,7 @@
             "title": "Valorant Search API",
             "description": "Usage of a Valorant API to get information on various game elements - School Project",
             "image": "valorant-api.jpg",
-            "link": "https://solarrris.github.io/r4a10-tp-api-2023-billots-boudiafj/",
+            "link": "https://samuscode.github.io/r4a10-tp-api-2023-billots-boudiafj/",
             "languages": "HTML, CSS, JavaScript"
         },
         {
@@ -55,7 +55,7 @@
             "title": "School Game Jam",
             "description": "Game Jam organized within the university. Fifth place",
             "image": "porto.png",
-            "link": "https://github.com/Solarrris/porto-game-jam",
+            "link": "https://github.com/samuscode/porto-game-jam",
             "languages": "Pygame, Python"
         }
     ]
