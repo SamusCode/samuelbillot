@@ -1,6 +1,20 @@
 {
     "personalProjects": [
         {
+            "title": "Isibouffe website",
+            "description": "Website of the cooking school club",
+            "image": "logo-isibouffe.png",
+            "link": "https://site-isibouffe-wwlhi.ondigitalocean.app/",
+            "languages": "React, SCSS"
+        },
+        {
+            "title": "BoyZZ Band website",
+            "description": "Website of our student's association list",
+            "image": "logo-boyzzband.webp",
+            "link": "https://boyzzband.studio/",
+            "languages": "React, SCSS"
+        },
+        {
             "title": "Conway's Game",
             "description": "Game that simulates life cells behaviour",
             "image": "game-of-life.png",
@@ -20,13 +34,6 @@
             "image": "fighting-game.png",
             "link": "https://samuscode.github.io/fighting-game/",
             "languages": "Canvas, JavaScript"
-        },
-        {
-            "title": "E-Commerce Project",
-            "description": "Unfinished project about e-commerce",
-            "image": "fashioner.png",
-            "link": "https://samuscode.github.io/Website-fashioner/",
-            "languages": "HTML, CSS, JavaScript"
         }
     ],
     "schoolProjects": [
